@@ -8,6 +8,10 @@
 
 import UIKit
 
+struct Response: Codable { // or Decodable
+    let foo: String
+}
+
 class ViewController: UIViewController {
     
     @IBAction func onGetTapped(_ sender: Any) {
@@ -23,6 +27,8 @@ class ViewController: UIViewController {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     print(json)
+//                    if let jsonString = try String(data: data, encoding: .utf8) {
+//                        print(jsonString)
                 } catch {
                     print(error)
                 }

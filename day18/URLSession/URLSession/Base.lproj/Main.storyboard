@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWU-lo-60H">
-                                <rect key="frame" x="152" y="467" width="110" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWU-lo-60H">
+                                <rect key="frame" x="10" y="106" width="394" height="46"/>
                                 <color key="backgroundColor" red="0.91944991320000002" green="0.96532100860000003" blue="0.15160516099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="POST"/>
@@ -28,9 +27,8 @@
                                     <action selector="onPostTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="My3-v4-SYT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFb-06-XzK">
-                                <rect key="frame" x="152" y="373" width="110" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFb-06-XzK">
+                                <rect key="frame" x="10" y="54" width="394" height="42"/>
                                 <color key="backgroundColor" red="0.91944991320000002" green="0.96532100860000003" blue="0.15160516099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="GET"/>
@@ -38,8 +36,26 @@
                                     <action selector="onGetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctv-nA-XEQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PO-rd-Ozi">
+                                <rect key="frame" x="10" y="162" width="394" height="264"/>
+                                <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.56277769973073644" blue="0.63309519615628307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KFb-06-XzK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8ZL-Ts-l3o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GWU-lo-60H" secondAttribute="trailing" constant="10" id="Ku1-9I-yUx"/>
+                            <constraint firstItem="5PO-rd-Ozi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Mds-HW-Sei"/>
+                            <constraint firstItem="5PO-rd-Ozi" firstAttribute="top" secondItem="GWU-lo-60H" secondAttribute="bottom" constant="10" id="NtU-KY-ZMe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KFb-06-XzK" secondAttribute="trailing" constant="10" id="aFV-0q-lmp"/>
+                            <constraint firstItem="KFb-06-XzK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="jSA-CM-n0w"/>
+                            <constraint firstItem="GWU-lo-60H" firstAttribute="top" secondItem="KFb-06-XzK" secondAttribute="bottom" constant="10" id="nWC-zO-gOf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5PO-rd-Ozi" secondAttribute="trailing" constant="10" id="qqW-NI-CYs"/>
+                            <constraint firstItem="GWU-lo-60H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vt9-Dq-vh8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
